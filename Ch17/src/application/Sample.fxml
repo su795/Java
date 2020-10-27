@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="348.0" minWidth="293.0" prefHeight="356.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="btnRegister" layoutX="213.0" layoutY="313.0" mnemonicParsing="false" text="직원등록" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="6.0" prefHeight="50.0" prefWidth="293.0" text="직원등록하기" textFill="#7860da">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUid" layoutX="83.0" layoutY="92.0" prefHeight="23.0" prefWidth="171.0" />
+      <Label layoutX="23.0" layoutY="96.0" text="아이디" />
+      <TextField fx:id="txtName" layoutX="83.0" layoutY="127.0" prefHeight="23.0" prefWidth="171.0" />
+      <Label layoutX="23.0" layoutY="131.0" text="이름" />
+      <TextField fx:id="txtHp" layoutX="83.0" layoutY="162.0" prefHeight="23.0" prefWidth="171.0" />
+      <Label layoutX="22.0" layoutY="166.0" text="휴대폰" />
+      <TextField fx:id="txtPos" layoutX="83.0" layoutY="197.0" prefHeight="23.0" prefWidth="171.0" />
+      <Label layoutX="23.0" layoutY="201.0" text="직급" />
+      <TextField fx:id="txtDep" layoutX="83.0" layoutY="231.0" prefHeight="23.0" prefWidth="171.0" />
+      <Label layoutX="23.0" layoutY="235.0" text="부서" />
+      <Label layoutX="23.0" layoutY="269.0" text="입사일" />
+      <DatePicker fx:id="txtRegDate" layoutX="84.0" layoutY="265.0" prefHeight="23.0" prefWidth="171.0" />
+      <Button fx:id="btnClear" layoutX="154.0" layoutY="313.0" mnemonicParsing="false" text="초기화" />
+   </children>
+</AnchorPane>
