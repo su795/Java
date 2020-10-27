@@ -1,0 +1,43 @@
+Database 개발환경설정
+
+HeidiSQL 설치방법
+1. https://www.heidisql.com/에서 heidiSQL 설치
+2. 세션이름 설정 : 수업서버
+3. 호스트명 / IP : 192.168.44.7
+4. 사용자 : (HeidiSQL 아이디)
+5. 비밀번호 : 1234
+
+
+eXERD 설치방법
+1. http://ko.exerd.com/ 에서 다운로드 -> 이클립스 플러그인으로 설치 -> 버전 주소 복사
+2. 이클립스 실행 -> Help -> Install New Software -> Work with 오른쪽 Add 클릭 -> Location에 복사한 주소 붙여넣기 -> Add
+3. name창의 eXERD 클릭 후 설치
+   
+
+mySQL 설치방법
+1. https://www.mysql.com/ -> DOWNLOADS
+2. 사이트 하단 MySQL Community (GPL) Downloads » 클릭
+3. 우측 메뉴 Connector/J 클릭
+4. Looking for previous GA versions? 클릭
+5. Platform Independent (Architecture Independent), ZIP Archive 다운로드
+
+
+eXERD 데이터 생성
+1. New -> Other -> eXERD -> eXERD file
+2. 대상 DMBS MySQL 5.1 ~ 5.8로 설정
+3. 테이블 생성(단축키 "3")
+4. 단축키 Ctrl + Enter -> 컬럼 추가
+5. 테이블 정보 입력(개념적 모델링)
+6. 관계 설정(논리적 모델)
+7. 칼럼보기 설정 -> 논리 / 물리 동시편집 선택
+8. 데이터 물리이름 및 데이터 타입 입력
+9. mySQL 압축파일 해제 -> mysql-connector-java-5.1.49.jar 파일 이클립스 src에 복사
+10. eXERD 리본창 -> 포워드 엔지니어링
+
+
+.exerd 파일 포워드 엔지니어링
+1. DDL 생성 옵션 -> 공통 -> 이름 앞에 스키마 표시 체크 해제
+2. 마지막 연결설정까지 next -> JDBC 드라이버 : mysql-connector-java-5.1.49.jar 자르파일선택 -> 드라이버 클래스 : com.mysql.jdbc.Driver 선택
+3. 호스트: 192.168.44.7,   데이터베이스 : 아이디,  사용자: 아이디, 비밀번호: 
+4. 연결테스트 -> 연결 성공
+5. finish
