@@ -1,4 +1,4 @@
-## Java 수업예제
+## Java 수업
 
 ### Ch01. Hello World
 ```
