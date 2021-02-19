@@ -3,34 +3,34 @@ package sub1;
 import java.util.Scanner;
 
 /*
- * 	³¯Â¥ : 2020/05/01
- * 	ÀÌ¸§ : ±Ç±â¹Î
- * 	³»¿ë : Á¶°Ç¹® if ½Ç½ÀÇÏ±â
+ * 	ë‚ ì§œ : 2020/05/01
+ * 	ì´ë¦„ : ì˜¤ì„¸í›ˆ
+ * 	ë‚´ìš© : ì¡°ê±´ë¬¸ if ì‹¤ìŠµí•˜ê¸°
  */
 
 public class IfTest {
 
 	public static void main(String[] args) {
 		
-		// if					ºĞ±â¹® - Á¶°Ç¿¡ ¸ÂÀ» °æ¿ì ºí·°ºÎºĞ ·ÎÁ÷ ½ÇÇà, Á¶°Ç¿¡ ¸ÂÁö ¾ÊÀ» °æ¿ì ·ÎÁ÷À» ½ÇÇàÇÏÁö ¾Ê°í ÁøÇà
+		// if					ë¶„ê¸°ë¬¸ - ì¡°ê±´ì— ë§ì„ ê²½ìš° ë¸”ëŸ­ë¶€ë¶„ ë¡œì§ ì‹¤í–‰, ì¡°ê±´ì— ë§ì§€ ì•Šì„ ê²½ìš° ë¡œì§ì„ ì‹¤í–‰í•˜ì§€ ì•Šê³  ì§„í–‰
 		int num1 = 1;
 		int num2 = 2;
 	
 		if( num1 < num2 ) {
-			// ºí·°
-			System.out.println("num1ÀÇ num2º¸´Ù ÀÛ´Ù.");	// ºí·°
-			// ºí·°
+			// ë¸”ëŸ­
+			System.out.println("num1ì˜ num2ë³´ë‹¤ ì‘ë‹¤.");	// ë¸”ëŸ­
+			// ë¸”ëŸ­
 		}				
 		
-		// ¿©·¯ ºĞ±â¿¡ °ÉÃÄ ½ÇÇà¹®ÀÌ ÀÏ¾î³ª´Â °ÍÀ» ¾²·¹µå¶ó°í ÇÑ´Ù.
+		// ì—¬ëŸ¬ ë¶„ê¸°ì— ê±¸ì³ ì‹¤í–‰ë¬¸ì´ ì¼ì–´ë‚˜ëŠ” ê²ƒì„ ì“°ë ˆë“œë¼ê³  í•œë‹¤.
 		if( num1 > 0 ) {
 			if(num2 > 1 ) {
-				System.out.println("num1Àº 0º¸´Ù Å©°í num2´Â 1º¸´Ù Å©´Ù.");
+				System.out.println("num1ì€ 0ë³´ë‹¤ í¬ê³  num2ëŠ” 1ë³´ë‹¤ í¬ë‹¤.");
 			}
 		}
 		
 		if( num1 > 0 && num2 > 1 ) {
-			System.out.println("num1Àº 0º¸´Ù Å©°í ±×¸®°í num2´Â 1º¸´Ù Å©´Ù.");
+			System.out.println("num1ì€ 0ë³´ë‹¤ í¬ê³  ê·¸ë¦¬ê³  num2ëŠ” 1ë³´ë‹¤ í¬ë‹¤.");
 		}
 		
 		
@@ -38,9 +38,9 @@ public class IfTest {
 		
 		// if ~ else
 		if ( num1 > num2 ) {
-			System.out.println("num1Àº num2º¸´Ù Å©´Ù.");
+			System.out.println("num1ì€ num2ë³´ë‹¤ í¬ë‹¤.");
 		} else {
-			System.out.println("num1Àº num2º¸´Ù ÀÛ´Ù.");
+			System.out.println("num1ì€ num2ë³´ë‹¤ ì‘ë‹¤.");
 		}
 		
 		
@@ -49,38 +49,38 @@ public class IfTest {
 		int n1 = 1, n2 = 2, n3 = 3, n4 = 4;
 		
 		if( n1 > n2 ) {
-			System.out.println("n1Àº n2º¸´Ù Å©´Ù.");
+			System.out.println("n1ì€ n2ë³´ë‹¤ í¬ë‹¤.");
 		} else if ( n2 > n3 ) {
-			System.out.println("n2Àº n3º¸´Ù Å©´Ù.");
+			System.out.println("n2ì€ n3ë³´ë‹¤ í¬ë‹¤.");
 		} else if( n3 > n4 ) {		
-			System.out.println("n3Àº n4º¸´Ù Å©´Ù.");
+			System.out.println("n3ì€ n4ë³´ë‹¤ í¬ë‹¤.");
 		} else {
-			System.out.println("n4°¡ Á¦ÀÏ Å©´Ù.");
+			System.out.println("n4ê°€ ì œì¼ í¬ë‹¤.");
 		}
 		
 		
 		
-		// ¿¬½À¹®Á¦
+		// ì—°ìŠµë¬¸ì œ
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¡¼ö ÀÔ·Â : ");		// println() ÇÔ¼ö´Â Ãâ·Â ÈÄ ÁÙ¹Ù²Ş ÇÏ´Â ÇÔ¼ö
+		System.out.print("ì ìˆ˜ ì…ë ¥ : ");		// println() í•¨ìˆ˜ëŠ” ì¶œë ¥ í›„ ì¤„ë°”ê¿ˆ í•˜ëŠ” í•¨ìˆ˜
 		int score = sc.nextInt();		
 		
-		System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö´Â " + score + "ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë ¥í•˜ì‹  ì ìˆ˜ëŠ” " + score + "ì…ë‹ˆë‹¤.");
 		
 		if( score > 100 ) {
-			System.out.println("Á¡¼ö´Â 100Á¡ ¹Ì¸¸À¸·Î ÀÔ·ÂÇØ ÁÖ½Ê½Ã¿À.");
+			System.out.println("ì ìˆ˜ëŠ” 100ì  ë¯¸ë§Œìœ¼ë¡œ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤.");
 		} else if( score >= 90 && score < 100 ) {
-			System.out.println("µî±ŞÀº AÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Aì…ë‹ˆë‹¤.");
 		} else if( score >= 80 && score < 90 ) {
-			System.out.println("µî±ŞÀº BÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Bì…ë‹ˆë‹¤.");
 		} else if( score >= 70 && score < 80) {
-			System.out.println("µî±ŞÀº CÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Cì…ë‹ˆë‹¤.");
 		} else if( score >= 60 && score < 70 ) {
-			System.out.println("µî±ŞÀº DÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Dì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println("µî±ŞÀº FÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Fì…ë‹ˆë‹¤.");
 		}
 		
 		
