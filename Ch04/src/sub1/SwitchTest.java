@@ -3,9 +3,9 @@ package sub1;
 import java.util.Scanner;
 
 /*
- * 	³¯Â¥ : 2020/05/01
- * 	ÀÌ¸§ : ±Ç±â¹Î
- * 	³»¿ë : Á¶°Ç¹® Switch ½Ç½ÀÇÏ±â
+ * 	ë‚ ì§œ : 2020/05/01
+ * 	ì´ë¦„ : ì˜¤ì„¸í›ˆ
+ * 	ë‚´ìš© : ì¡°ê±´ë¬¸ Switch ì‹¤ìŠµí•˜ê¸°
  */
 
 public class SwitchTest {
@@ -14,62 +14,62 @@ public class SwitchTest {
 		
 		int num = 3;
 		
-		switch(num) {			// º¯¼ö¸¦ ÀÔ·ÂÇÑ´Ù. º¯¼ö¸¦ °¡Áö°í ºĞ±âÇÑ´Ù.
+		switch(num) {			// ë³€ìˆ˜ë¥¼ ì…ë ¥í•œë‹¤. ë³€ìˆ˜ë¥¼ ê°€ì§€ê³  ë¶„ê¸°í•œë‹¤.
 		case 1:
 			
-			System.out.println("numÀº 1ÀÔ´Ï´Ù.");
+			System.out.println("numì€ 1ì…ë‹ˆë‹¤.");
 			break;
 			
 		case 2:
 			
-			System.out.println("numÀº 2ÀÔ´Ï´Ù.");
+			System.out.println("numì€ 2ì…ë‹ˆë‹¤.");
 			break;
 			
 		case 3:
 			
-			System.out.println("numÀº 3ÀÔ´Ï´Ù.");
+			System.out.println("numì€ 3ì…ë‹ˆë‹¤.");
 			break;
 			
 		default:
 			
-			System.out.println("numÀº 1, 2, 3ÀÌ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("numì€ 1, 2, 3ì´ ì•„ë‹™ë‹ˆë‹¤.");
 			break;
 		}
 		
-		// ¿¬½À¹®Á¦
+		// ì—°ìŠµë¬¸ì œ
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¡¼öÀÔ·Â : ");
+		System.out.print("ì ìˆ˜ì…ë ¥ : ");
 		
 		int score = sc.nextInt();
 		
-		System.out.println("ÀÔ·ÂÇÑ Á¡¼ö´Â " + score + "ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë ¥í•œ ì ìˆ˜ëŠ” " + score + "ì…ë‹ˆë‹¤.");
 		
 		int grade = score / 10;
 		
 		switch(grade) {
 		case 10:			
-			System.out.println("µî±ŞÀº AÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Aì…ë‹ˆë‹¤.");
 			break;
 			
 		case 9:			
-			System.out.println("µî±ŞÀº AÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Aì…ë‹ˆë‹¤.");
 			break;
 			
 		case 8:			
-			System.out.println("µî±ŞÀº BÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Bì…ë‹ˆë‹¤.");
 			break;
 			
 		case 7:			
-			System.out.println("µî±ŞÀº CÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Cì…ë‹ˆë‹¤.");
 			break;
 			
 		case 6:
-			System.out.println("µî±ŞÀº DÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Dì…ë‹ˆë‹¤.");
 			break;
 			
 		default:
-			System.out.println("µî±ŞÀº FÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì€ Fì…ë‹ˆë‹¤.");
 			break;
 		}
 		
