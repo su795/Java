@@ -1,15 +1,15 @@
 package sub1;
 
 /*
- * ³¯Â¥ : 2020/04/29
- * ÀÌ¸§ : ±Ç±â¹Î
- * ³»¿ë : ¿¬»êÀÚ ½Ç½ÀÇÏ±â 
+ * ë‚ ì§œ : 2020/04/29
+ * ì´ë¦„ : ì˜¤ì„¸í›ˆ
+ * ë‚´ìš© : ì—°ì‚°ì ì‹¤ìŠµí•˜ê¸° 
  */
 
 public class OperatorTest {
 	
 	public static void main(String[] args) {
-		// »ê¼ú¿¬»êÀÚ
+		// ì‚°ìˆ ì—°ì‚°ì
 		int num1 = 1;
 		int num2 = 2;	
 		int num3 = 3, num4 = 4;
@@ -29,19 +29,19 @@ public class OperatorTest {
 <<<<<<< HEAD
 		
 		
-		// Áõ°¨, °¨¼Ò ¿¬»êÀÚ
+		// ì¦ê°, ê°ì†Œ ì—°ì‚°ì
 		int n1 = 1;
 		int n2 = 2;
 		
 		n1++;
 		n2--;
 		
-		System.out.println("n1ÀÇ °ª : " + n1);
-		System.out.println("n2ÀÇ °ª : " + n2);
+		System.out.println("n1ì˜ ê°’ : " + n1);
+		System.out.println("n2ì˜ ê°’ : " + n2);
 		
 		
 		
-		// º¹ÇÕ´ëÀÔ¿¬»êÀÚ
+		// ë³µí•©ëŒ€ì…ì—°ì‚°ì
 		int no1 = 1, no2 = 2, no3 = 3, no4 = 4;
 		
 		no1 += 1;	// no1 = no1 + 1;
@@ -50,23 +50,23 @@ public class OperatorTest {
 		no4 /= 4;	// no4 = no4 / 4;
 		
 		
-		System.out.println("º¯¼ö no1ÀÇ °ª : " + no1);
-		System.out.println("º¯¼ö no2ÀÇ °ª : " + no2);
-		System.out.println("º¯¼ö no3ÀÇ °ª : " + no3);
-		System.out.println("º¯¼ö no4ÀÇ °ª : " + no4);
+		System.out.println("ë³€ìˆ˜ no1ì˜ ê°’ : " + no1);
+		System.out.println("ë³€ìˆ˜ no2ì˜ ê°’ : " + no2);
+		System.out.println("ë³€ìˆ˜ no3ì˜ ê°’ : " + no3);
+		System.out.println("ë³€ìˆ˜ no4ì˜ ê°’ : " + no4);
 		
 		
 		
-		// ºñ±³¿¬»êÀÚ
+		// ë¹„êµì—°ì‚°ì
 		int var1 = 1;
 		int var2 = 2;
 		
-		boolean res1 = (var1 > var2);	// var1ÀÌ var2º¸´Ù Å©´Ù.
-		boolean res2 = (var1 < var2);	// var1ÀÌ var2º¸´Ù ÀÛ´Ù.
-		boolean res3 = (var1 >= var2);	// var1ÀÌ var2º¸´Ù Å©°Å³ª °°´Ù.
-		boolean res4 = (var1 <= var2);	// var1ÀÌ var2º¸´Ù ÀÛ°Å³ª °°´Ù.
-		boolean res5 = (var1 == var2);	// var1ÀÌ var2°¡  ¼­·Î °°´Ù.
-		boolean res6 = (var1 != var2);	// var1ÀÌ var2°¡  ¼­·Î ´Ù¸£´Ù.
+		boolean res1 = (var1 > var2);	// var1ì´ var2ë³´ë‹¤ í¬ë‹¤.
+		boolean res2 = (var1 < var2);	// var1ì´ var2ë³´ë‹¤ ì‘ë‹¤.
+		boolean res3 = (var1 >= var2);	// var1ì´ var2ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤.
+		boolean res4 = (var1 <= var2);	// var1ì´ var2ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ë‹¤.
+		boolean res5 = (var1 == var2);	// var1ì´ var2ê°€  ì„œë¡œ ê°™ë‹¤.
+		boolean res6 = (var1 != var2);	// var1ì´ var2ê°€  ì„œë¡œ ë‹¤ë¥´ë‹¤.
 		
 		System.out.println("res1 : " + res1);
 		System.out.println("res2 : " + res2);
@@ -77,12 +77,12 @@ public class OperatorTest {
 		
 		
 		
-		// ³í¸®¿¬»êÀÚ
-		boolean r1 = (var1 > 0) && (var2 > 1);	// var1Àº 0º¸´Ù Å©°í var2´Â 1º¸´Ù Å©´Ù.(&&, and)	true µÎ Á¶°Ç ¸ğµÎ ÂüÀÌ±â ¶§¹®¿¡ true.
-		boolean r2 = (var1 > 0) && (var2 > 2);	// var1Àº 0º¸´Ù Å©°í var2´Â 2º¸´Ù Å©´Ù.(&&, and)	2¹øÂ° Á¶°ÇÀÌ °ÅÁşÀÌ±â ¶§¹®¿¡ false°¡ ³ª¿Â´Ù.
-		boolean r3 = (var1 > 0) || (var2 > 2);	// var1Àº 0º¸´Ù Å©°Å³ª var2´Â 2º¸´Ù Å©´Ù.(||, or)	|| ¿¬»êÀº µÑ Áß ÇÏ³ª¸¸ ÂüÀÌ¾îµµ true.
-		boolean r4 = (var1 > 5) || (var2 > 3);	// var1Àº 5º¸´Ù Å©°Å³ª var2´Â 3º¸´Ù Å©´Ù.(||, or)	||´Â µÑ ´Ù °ÅÁşÀÏ °æ¿ì false.
-		boolean r5 = !(var1 > var2);	// var1Àº var2º¸´Ù Å©´Ù.(!(Á¶°Ç¹®), not)	!(Á¶°Ç¹®)Àº ÂüÀÏ °æ¿ì false¸¦ °ÅÁşÀÏ °æ¿ì true¸¦ ¹İÈ¯ÇÑ´Ù.
+		// ë…¼ë¦¬ì—°ì‚°ì
+		boolean r1 = (var1 > 0) && (var2 > 1);	// var1ì€ 0ë³´ë‹¤ í¬ê³  var2ëŠ” 1ë³´ë‹¤ í¬ë‹¤.(&&, and)	true ë‘ ì¡°ê±´ ëª¨ë‘ ì°¸ì´ê¸° ë•Œë¬¸ì— true.
+		boolean r2 = (var1 > 0) && (var2 > 2);	// var1ì€ 0ë³´ë‹¤ í¬ê³  var2ëŠ” 2ë³´ë‹¤ í¬ë‹¤.(&&, and)	2ë²ˆì§¸ ì¡°ê±´ì´ ê±°ì§“ì´ê¸° ë•Œë¬¸ì— falseê°€ ë‚˜ì˜¨ë‹¤.
+		boolean r3 = (var1 > 0) || (var2 > 2);	// var1ì€ 0ë³´ë‹¤ í¬ê±°ë‚˜ var2ëŠ” 2ë³´ë‹¤ í¬ë‹¤.(||, or)	|| ì—°ì‚°ì€ ë‘˜ ì¤‘ í•˜ë‚˜ë§Œ ì°¸ì´ì–´ë„ true.
+		boolean r4 = (var1 > 5) || (var2 > 3);	// var1ì€ 5ë³´ë‹¤ í¬ê±°ë‚˜ var2ëŠ” 3ë³´ë‹¤ í¬ë‹¤.(||, or)	||ëŠ” ë‘˜ ë‹¤ ê±°ì§“ì¼ ê²½ìš° false.
+		boolean r5 = !(var1 > var2);	// var1ì€ var2ë³´ë‹¤ í¬ë‹¤.(!(ì¡°ê±´ë¬¸), not)	!(ì¡°ê±´ë¬¸)ì€ ì°¸ì¼ ê²½ìš° falseë¥¼ ê±°ì§“ì¼ ê²½ìš° trueë¥¼ ë°˜í™˜í•œë‹¤.
 		
 		System.out.println("r1 : " + r1);
 		System.out.println("r2 : " + r2);
@@ -91,20 +91,20 @@ public class OperatorTest {
 		System.out.println("r5 : " + r5);
 		
 =======
-		// Áõ°¨, °¨¼Ò ¿¬»êÀÚ
+		// ì¦ê°, ê°ì†Œ ì—°ì‚°ì
 		int n1 = 1;
 		int n2 = 2;
 		
 		n1++;
 		n2--;
 		
-		System.out.println("n1ÀÇ °ª : " + n1);
-		System.out.println("n2ÀÇ °ª : " + n2);
+		System.out.println("n1ì˜ ê°’ : " + n1);
+		System.out.println("n2ì˜ ê°’ : " + n2);
 		
-		// º¹ÇÕ´ëÀÔ¿¬»êÀÚ
+		// ë³µí•©ëŒ€ì…ì—°ì‚°ì
 		
-		// ºñ±³¿¬»êÀÚ
-		// ³í¸®¿¬»êÀÚ
+		// ë¹„êµì—°ì‚°ì
+		// ë…¼ë¦¬ì—°ì‚°ì
 >>>>>>> refs/remotes/origin/master
 	}
 	
