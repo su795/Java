@@ -1,9 +1,9 @@
 package sub2;
 
 /*
- * ³¯Â¥ : 2020/04/29
- * ÀÌ¸§ : ±Ç±â¹Î
- * ³»¿ë : ¹İº¹¹® for ½Ç½ÀÇÏ±â 
+ * ë‚ ì§œ : 2020/04/29
+ * ì´ë¦„ : ì˜¤ì„¸í›ˆ
+ * ë‚´ìš© : ë°˜ë³µë¬¸ for ì‹¤ìŠµí•˜ê¸° 
  */
 
 public class ForTest {
@@ -17,18 +17,18 @@ public class ForTest {
 		
 		
 		
-		// 1ºÎÅÍ 10±îÁöÀÇ ÇÕ
+		// 1ë¶€í„° 10ê¹Œì§€ì˜ í•©
 		int sum = 0;
 		
 		for(int k = 1; k <= 10; k++) {
   			sum += k;			
 		}
 		
-		System.out.println("1ºÎÅÍ 10±îÁö ÇÕ : " + sum);
+		System.out.println("1ë¶€í„° 10ê¹Œì§€ í•© : " + sum);
 		
 		
 		
-		// 1ºÎÅÍ 10±îÁöÀÇ Â¦¼öÇÕ
+		// 1ë¶€í„° 10ê¹Œì§€ì˜ ì§ìˆ˜í•©
 		int eSum = 0;
 		
 		for(int k = 1; k <= 10; k++) {
@@ -37,11 +37,11 @@ public class ForTest {
 			}
 		}
 		
-		System.out.println("1ºÎÅÍ 10±îÁö Â¦¼öÇÕ : " + eSum);
+		System.out.println("1ë¶€í„° 10ê¹Œì§€ ì§ìˆ˜í•© : " + eSum);
 		
 		
 		
-		// ÀÌÁß for¹®
+		// ì´ì¤‘ forë¬¸
 		for(int a = 1; a <= 3; a++) {
 			
 			System.out.println("a : " + a);
@@ -52,11 +52,11 @@ public class ForTest {
 		}
 		
 		
-		// ±¸±¸´Ü
+		// êµ¬êµ¬ë‹¨
 		for(int x = 2; x <= 9; x++) {
 			
 			System.out.println();
-			System.out.println(x + "´Ü");
+			System.out.println(x + "ë‹¨");
 			
 			for(int y = 1; y <= 9; y++) {
 				
@@ -65,14 +65,14 @@ public class ForTest {
 			}
 		}
 		
-		System.out.print("\n");		// ÁÙ ¹Ù²Ş
+		System.out.print("\n");		// ì¤„ ë°”ê¿ˆ
 		
-		// º° »ï°¢Çü I
-		for(int start = 1; start <= 10; start++) {		// start°¡ 10 ¹Ì¸¸ÀÎ °æ¿ì °è¼Ó ¹İº¹µÈ´Ù.
+		// ë³„ ì‚¼ê°í˜• I
+		for(int start = 1; start <= 10; start++) {		// startê°€ 10 ë¯¸ë§Œì¸ ê²½ìš° ê³„ì† ë°˜ë³µëœë‹¤.
 			
 			for(int end = 1; end <= start; end++) {
 				
-				System.out.print("¡Ù");
+				System.out.print("â˜†");
 				
 			}
 			
@@ -82,12 +82,12 @@ public class ForTest {
 		}
 		
 		
-		// º° »ï°¢Çü I(¿ª¹æÇâ)
-		for(int start = 10; start >= 1; start--) {		// start°¡ 1º¸´Ù Å« °æ¿ì °è¼Ó ¹İº¹µÇ°í start°¡ 1º¸´Ù ÀÛ¾ÆÁö´Â ¼ø°£ ¹İº¹¹®ÀÌ Á¾·áµÈ´Ù.
+		// ë³„ ì‚¼ê°í˜• I(ì—­ë°©í–¥)
+		for(int start = 10; start >= 1; start--) {		// startê°€ 1ë³´ë‹¤ í° ê²½ìš° ê³„ì† ë°˜ë³µë˜ê³  startê°€ 1ë³´ë‹¤ ì‘ì•„ì§€ëŠ” ìˆœê°„ ë°˜ë³µë¬¸ì´ ì¢…ë£Œëœë‹¤.
 					
 			for(int end = 1; end <= start; end++) {
 				
-				System.out.print("¡Ú");
+				System.out.print("â˜…");
 				
 			}
 			
@@ -97,15 +97,15 @@ public class ForTest {
 		
 		
 		
-		// º° »ï°¢Çü II
+		// ë³„ ì‚¼ê°í˜• II
 		for(int a = 1; a <= 10; a++) {
 			
 			for(int b = 1; b <= 10-a; b++) {
-				System.out.print("¡Ù");
+				System.out.print("â˜†");
 			}
 			
 			for(int c = 1; c <= a; c++) {
-				System.out.print("¡Ú");
+				System.out.print("â˜…");
 			}
 			
 			System.out.print("\n");
@@ -115,15 +115,15 @@ public class ForTest {
 		System.out.print("\n");
 		
 		
-		// (ÀÀ¿ë)ÀüºÎ ºóºÎÅÍ ²Ë Âù º°±îÁö
+		// (ì‘ìš©)ì „ë¶€ ë¹ˆë¶€í„° ê½‰ ì°¬ ë³„ê¹Œì§€
 		for(int a = 0; a < 11; a++) {
 			
 			for(int b = 1; b <= 10-a; b++) {
-				System.out.print("¡Ù");
+				System.out.print("â˜†");
 			}
 			
 			for(int c = 1; c <= a; c++) {
-				System.out.print("¡Ú");
+				System.out.print("â˜…");
 			}
 			
 			System.out.print("\n");
